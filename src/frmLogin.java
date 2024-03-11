@@ -29,13 +29,16 @@ public class frmLogin extends javax.swing.JFrame {
         txtUsername = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtMatkhau = new javax.swing.JTextField();
+        txtpassword = new javax.swing.JTextField();
+        btnlogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Username");
 
-        jLabel2.setText("matkhau");
+        jLabel2.setText("Password");
+
+        btnlogin.setText("Login");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -47,9 +50,11 @@ public class frmLogin extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
-                    .addComponent(txtMatkhau))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnlogin)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                        .addComponent(txtpassword)))
                 .addContainerGap(131, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -62,8 +67,10 @@ public class frmLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtMatkhau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(171, Short.MAX_VALUE))
+                    .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(btnlogin)
+                .addContainerGap(115, Short.MAX_VALUE))
         );
 
         pack();
@@ -105,9 +112,10 @@ public class frmLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnlogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField txtMatkhau;
     private javax.swing.JTextField txtUsername;
+    private javax.swing.JTextField txtpassword;
     // End of variables declaration//GEN-END:variables
 }
